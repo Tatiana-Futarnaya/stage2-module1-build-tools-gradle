@@ -1,4 +1,22 @@
-//add everything here
+plugins{
+    id 'java-library'
+}
+
+java{
+    sourceCompatibility='15'
+}
+
+repositories {
+
+    mavenCentral()
+}
+
+
+
+dependencies {
+    implementation project('::utils')
+}
+
 
 test {
     useJUnitPlatform()
