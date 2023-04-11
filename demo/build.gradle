@@ -1,22 +1,16 @@
 plugins{
-    id 'java-library'
+    id 'java'
+    id 'application'
 }
-
-java{
-    sourceCompatibility='15'
-}
-
-repositories {
-
-    mavenCentral()
-}
-
 
 
 dependencies {
-    implementation project('::utils')
+    implementation project(':utils')
 }
 
+repositories {
+    mavenCentral()
+}
 
 test {
     useJUnitPlatform()
